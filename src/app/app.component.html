@@ -1,4 +1,23 @@
-<app-add></app-add>
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <a class="navbar-brand" routerLink="/">Ricardo</a>
 
+    <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/add">Ajouter</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/view">Liste</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
 
-<router-outlet></router-outlet>
+            <router-outlet></router-outlet>
+
+        </div>
+    </div>
+</div>

@@ -1,3 +1,19 @@
-<p>
-  view works!
-</p>
+<table class="table">
+    <tr>
+          <th>#</th>
+          <th>Prénom</th>
+          <th>Nom</th>
+          <th>Email</th>
+          <th>Modifier</th>
+          <th>Supprimer</th>
+    </tr>
+    <tr *ngFor="let etudiant of students">
+          <td>{{ etudiant.id }}</td>
+          <td>{{ etudiant.prenom }}</td>
+          <td>{{ etudiant.nom }}</td>
+          <td>{{ etudiant.email}}</td>
+          <td><a href="#" class="btn btn-primary btn-sm">Edit</a></td>
+          <td><button (click)="delete(etudiant)" class="btn btn-danger btn-sm">Delete</button></td>
+    </tr>
+</table>
+ 

@@ -1,0 +1,7 @@
+.navbar-brand {
+    text-transform: uppercase;
+    color: #fff!important;
+    letter-spacing: 5px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #000;
+}
